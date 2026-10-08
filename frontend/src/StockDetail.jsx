@@ -113,15 +113,15 @@ function StockDetail({ market, ticker, money, signedMoney, owned, transactions, 
             <AreaChart data={history}>
               <defs>
                 <linearGradient id="price-fill" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="0%" stopColor={up ? '#34d399' : '#f87171'} stopOpacity={0.35} />
-                  <stop offset="100%" stopColor={up ? '#34d399' : '#f87171'} stopOpacity={0} />
+                  <stop offset="0%" stopColor={up ? '#1a7f37' : '#cf222e'} stopOpacity={0.35} />
+                  <stop offset="100%" stopColor={up ? '#1a7f37' : '#cf222e'} stopOpacity={0} />
                 </linearGradient>
               </defs>
-              <CartesianGrid stroke="#263043" vertical={false} />
-              <XAxis dataKey="time" tickFormatter={tick} stroke="#8b98ad" fontSize={12} minTickGap={50} />
-              <YAxis domain={['auto', 'auto']} stroke="#8b98ad" fontSize={12} width={70} tickFormatter={(v) => num(v, 0)} />
+              <CartesianGrid stroke="#d0d7de" vertical={false} />
+              <XAxis dataKey="time" tickFormatter={tick} stroke="#656d76" fontSize={12} minTickGap={50} />
+              <YAxis domain={['auto', 'auto']} stroke="#656d76" fontSize={12} width={70} tickFormatter={(v) => num(v, 0)} />
               <Tooltip labelFormatter={(iso) => new Date(iso).toLocaleString()} formatter={(v) => [money(v), 'Close']} contentStyle={TOOLTIP_STYLE} />
-              <Area type="monotone" dataKey="close" stroke={up ? '#34d399' : '#f87171'} strokeWidth={2} fill="url(#price-fill)" isAnimationActive={false} />
+              <Area type="monotone" dataKey="close" stroke={up ? '#1a7f37' : '#cf222e'} strokeWidth={2} fill="url(#price-fill)" isAnimationActive={false} />
             </AreaChart>
           </ResponsiveContainer>
         )}

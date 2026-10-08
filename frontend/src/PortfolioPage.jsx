@@ -198,13 +198,13 @@ function PortfolioPage({ marketSwitch, money, signedMoney, portfolio, rows, tota
             ) : (
               <ResponsiveContainer width="100%" height={260}>
                 <BarChart data={costVsValue}>
-                  <CartesianGrid stroke="#263043" vertical={false} />
-                  <XAxis dataKey="ticker" stroke="#8b98ad" fontSize={12} />
-                  <YAxis stroke="#8b98ad" fontSize={12} tickFormatter={(v) => v.toLocaleString(undefined, { notation: 'compact' })} />
-                  <Tooltip formatter={(v) => money(v)} cursor={{ fill: '#ffffff10' }} contentStyle={TOOLTIP_STYLE} />
+                  <CartesianGrid stroke="#d0d7de" vertical={false} />
+                  <XAxis dataKey="ticker" stroke="#656d76" fontSize={12} />
+                  <YAxis stroke="#656d76" fontSize={12} tickFormatter={(v) => v.toLocaleString(undefined, { notation: 'compact' })} />
+                  <Tooltip formatter={(v) => money(v)} cursor={{ fill: '#0000000a' }} contentStyle={TOOLTIP_STYLE} />
                   <Legend />
-                  <Bar dataKey="Invested" fill="#6366f1" radius={[4, 4, 0, 0]} isAnimationActive={false} />
-                  <Bar dataKey="Current value" fill="#22d3ee" radius={[4, 4, 0, 0]} isAnimationActive={false} />
+                  <Bar dataKey="Invested" fill="#0969da" radius={[4, 4, 0, 0]} isAnimationActive={false} />
+                  <Bar dataKey="Current value" fill="#1b7c83" radius={[4, 4, 0, 0]} isAnimationActive={false} />
                 </BarChart>
               </ResponsiveContainer>
             )}

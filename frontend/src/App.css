@@ -2,9 +2,8 @@
   position: sticky;
   top: 0;
   z-index: 10;
-  background: #0b0f17d9;
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid #1c2536;
+  background: #ffffff;
+  border-bottom: 1px solid #d0d7de;
 }
 
 .topbar-inner {
@@ -21,18 +20,16 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  font-size: 18px;
-  font-weight: 800;
+  font-size: 16px;
+  font-weight: 700;
   letter-spacing: -0.01em;
 }
 
 .logo {
-  width: 22px;
-  height: 22px;
-  border-radius: 50%;
-  background: conic-gradient(#22d3ee 0 25%, #6366f1 25% 100%);
-  -webkit-mask: radial-gradient(circle, transparent 38%, #000 40%);
-  mask: radial-gradient(circle, transparent 38%, #000 40%);
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  background: #0969da;
 }
 
 .nav {
@@ -44,18 +41,18 @@
 .nav button {
   border: none;
   background: transparent;
-  color: #8b98ad;
+  color: #656d76;
   font-weight: 600;
   padding: 8px 12px;
 }
 
 .nav button:hover {
-  color: #e5e9f0;
+  color: #1f2328;
 }
 
 .nav button.active {
-  color: #fff;
-  background: #1c2536;
+  color: #1f2328;
+  background: #eaeef2;
 }
 
 .app {
@@ -74,13 +71,9 @@ p {
 }
 
 h1 {
-  font-size: 30px;
-  letter-spacing: -0.02em;
-  background: linear-gradient(90deg, #a5b4fc, #22d3ee);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  width: fit-content;
+  font-size: 26px;
+  font-weight: 650;
+  letter-spacing: -0.01em;
 }
 
 h2 {
@@ -104,43 +97,43 @@ h2 {
 }
 
 .muted {
-  color: #8b98ad;
+  color: #656d76;
   font-size: 14px;
 }
 
 .status {
   font-size: 12px;
-  color: #8b98ad;
+  color: #656d76;
   padding: 4px 10px;
-  border: 1px solid #263043;
+  border: 1px solid #d0d7de;
   border-radius: 999px;
   white-space: nowrap;
 }
 
 .status.down {
-  color: #f87171;
-  border-color: #7f1d1d;
+  color: #cf222e;
+  border-color: #ffebe9;
 }
 
 .tabs {
   display: flex;
   gap: 4px;
   padding: 3px;
-  background: #111827;
-  border: 1px solid #263043;
-  border-radius: 10px;
+  background: #ffffff;
+  border: 1px solid #d0d7de;
+  border-radius: 6px;
 }
 
 .tabs button {
   border: none;
   background: transparent;
-  color: #8b98ad;
+  color: #656d76;
   padding: 6px 14px;
   font-weight: 600;
 }
 
 .tabs button.active {
-  background: #6366f1;
+  background: #0969da;
   color: #fff;
 }
 
@@ -151,9 +144,9 @@ h2 {
 }
 
 .tile {
-  background: linear-gradient(160deg, #151d2e, #111827);
-  border: 1px solid #263043;
-  border-radius: 14px;
+  background: #ffffff;
+  border: 1px solid #d0d7de;
+  border-radius: 8px;
   padding: 16px 18px;
 }
 
@@ -171,9 +164,10 @@ h2 {
 }
 
 .card {
-  background: #111827;
-  border: 1px solid #263043;
-  border-radius: 14px;
+  background: #ffffff;
+  border: 1px solid #d0d7de;
+  box-shadow: 0 1px 2px #1f23280a;
+  border-radius: 8px;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -190,9 +184,9 @@ h2 {
 
 .notice {
   font-size: 13px;
-  color: #a5b4fc;
-  background: #6366f114;
-  border: 1px solid #6366f140;
+  color: #0969da;
+  background: #0969da14;
+  border: 1px solid #0969da40;
   border-radius: 8px;
   padding: 8px 12px;
 }
@@ -212,7 +206,7 @@ th,
 td {
   text-align: left;
   padding: 10px 8px;
-  border-bottom: 1px solid #1c2536;
+  border-bottom: 1px solid #eaeef2;
   white-space: nowrap;
   vertical-align: top;
 }
@@ -222,7 +216,7 @@ tbody tr:last-child td {
 }
 
 th {
-  color: #8b98ad;
+  color: #656d76;
   font-size: 12px;
   font-weight: 600;
   text-transform: uppercase;
@@ -234,14 +228,14 @@ input {
   width: 100%;
   min-width: 90px;
   padding: 7px 9px;
-  border: 1px solid #334155;
+  border: 1px solid #d0d7de;
   border-radius: 7px;
-  background: #0b0f17;
+  background: #ffffff;
   color: inherit;
 }
 
 input:focus {
-  outline: 2px solid #6366f1;
+  outline: 2px solid #0969da;
   border-color: transparent;
 }
 
@@ -249,16 +243,15 @@ button {
   font: inherit;
   font-size: 14px;
   cursor: pointer;
-  border-radius: 8px;
-  border: 1px solid #334155;
-  background: #1f2937;
+  border-radius: 6px;
+  border: 1px solid #d0d7de;
+  background: #eaeef2;
   color: inherit;
-  padding: 8px 14px;
-  transition: background 0.15s, border-color 0.15s;
+  padding: 7px 14px;
 }
 
 button:hover:not(:disabled) {
-  border-color: #6366f1;
+  border-color: #656d76;
 }
 
 button:disabled {
@@ -270,7 +263,7 @@ button.remove {
   border: none;
   background: none;
   padding: 0;
-  color: #f87171;
+  color: #cf222e;
 }
 
 .footer-row {
@@ -288,20 +281,18 @@ button.remove {
 }
 
 .stock {
-  background: #111827;
-  border: 1px solid #263043;
-  border-radius: 14px;
+  background: #ffffff;
+  border: 1px solid #d0d7de;
+  border-radius: 8px;
   padding: 16px;
   display: flex;
   flex-direction: column;
   gap: 6px;
   font-size: 14px;
-  transition: transform 0.15s, border-color 0.15s;
 }
 
 .stock:hover {
-  transform: translateY(-2px);
-  border-color: #6366f1;
+  border-color: #656d76;
 }
 
 .stock-head,
@@ -332,7 +323,7 @@ button.remove {
 .stock dl {
   margin: 8px 0 0;
   padding-top: 10px;
-  border-top: 1px solid #1c2536;
+  border-top: 1px solid #eaeef2;
   display: flex;
   flex-direction: column;
   gap: 4px;
@@ -345,7 +336,7 @@ button.remove {
 }
 
 .stock dt {
-  color: #8b98ad;
+  color: #656d76;
 }
 
 .stock dd {
@@ -365,35 +356,34 @@ button.remove {
 }
 
 button.primary {
-  background: linear-gradient(135deg, #6366f1, #4f46e5);
-  border-color: #6366f1;
+  background: #0969da;
+  border-color: #0969da;
   color: #fff;
   font-weight: 600;
-  padding: 10px 20px;
-  box-shadow: 0 4px 18px #6366f155;
+  padding: 8px 18px;
 }
 
 .good {
-  color: #34d399;
+  color: #1a7f37;
 }
 
 .bad {
-  color: #f87171;
+  color: #cf222e;
 }
 
 .hint {
   font-size: 12px;
-  color: #8b98ad;
+  color: #656d76;
   margin-top: 3px;
   white-space: normal;
 }
 
 .hint.good {
-  color: #34d399;
+  color: #1a7f37;
 }
 
 .hint.bad {
-  color: #f87171;
+  color: #cf222e;
 }
 
 .profile {
@@ -407,7 +397,7 @@ button.primary {
   flex-direction: column;
   gap: 6px;
   font-size: 13px;
-  color: #8b98ad;
+  color: #656d76;
 }
 
 .profile input {
@@ -434,8 +424,8 @@ button.primary {
 }
 
 .segmented button.active {
-  background: #6366f1;
-  border-color: #6366f1;
+  background: #0969da;
+  border-color: #0969da;
   color: #fff;
 }
 
@@ -453,11 +443,11 @@ button.primary {
 }
 
 .decision {
-  border-left: 6px solid #34d399;
+  border-left: 6px solid #1a7f37;
 }
 
 .decision.attention {
-  border-left-color: #fbbf24;
+  border-left-color: #9a6700;
 }
 
 .decision p {
@@ -465,15 +455,15 @@ button.primary {
 }
 
 .verdict {
-  font-size: 32px;
-  font-weight: 800;
+  font-size: 26px;
+  font-weight: 700;
 }
 
 .label {
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  color: #8b98ad;
+  color: #656d76;
 }
 
 .big {
@@ -497,14 +487,14 @@ ul.cautions {
 
 ul.cautions li {
   padding: 8px 12px;
-  border-left: 3px solid #fbbf24;
-  background: #fbbf2414;
+  border-left: 3px solid #9a6700;
+  background: #9a670014;
   border-radius: 0 6px 6px 0;
 }
 
 ul.cautions li.high {
-  border-left-color: #f87171;
-  background: #f8717114;
+  border-left-color: #cf222e;
+  background: #cf222e14;
 }
 
 .chip {
@@ -513,8 +503,8 @@ ul.cautions li.high {
   font-weight: 600;
   padding: 2px 8px;
   border-radius: 999px;
-  background: #1f2937;
-  color: #cbd5e1;
+  background: #eaeef2;
+  color: #424a53;
   vertical-align: middle;
 }
 
@@ -522,22 +512,22 @@ ul.cautions li.high {
 .chip.on-track,
 .chip.bullish,
 .chip.risk-low {
-  background: #064e3b;
-  color: #6ee7b7;
+  background: #dafbe1;
+  color: #1a7f37;
 }
 
 .chip.sell,
 .chip.overweight,
 .chip.bearish,
 .chip.risk-high {
-  background: #7f1d1d;
-  color: #fca5a5;
+  background: #ffebe9;
+  color: #cf222e;
 }
 
 .chip.underweight,
 .chip.risk-moderate {
-  background: #78350f;
-  color: #fcd34d;
+  background: #fff8c5;
+  color: #9a6700;
 }
 
 .metrics {
@@ -547,9 +537,9 @@ ul.cautions li.high {
 }
 
 .metric {
-  background: #0b0f17;
-  border: 1px solid #263043;
-  border-radius: 10px;
+  background: #f6f8fa;
+  border: 1px solid #d0d7de;
+  border-radius: 6px;
   padding: 14px;
 }
 
@@ -560,8 +550,8 @@ ul.cautions li.high {
 }
 
 .big-value {
-  font-size: 44px;
-  font-weight: 800;
+  font-size: 38px;
+  font-weight: 650;
   letter-spacing: -0.02em;
   font-variant-numeric: tabular-nums;
   line-height: 1.15;
@@ -586,8 +576,8 @@ td input.symbol {
   gap: 8px;
   padding: 36px 16px;
   text-align: center;
-  border: 1px dashed #334155;
-  border-radius: 12px;
+  border: 1px dashed #d0d7de;
+  border-radius: 8px;
 }
 
 .empty .button-group {
@@ -598,7 +588,7 @@ td input.symbol {
 input.search {
   font-size: 16px;
   padding: 12px 14px;
-  border-radius: 10px;
+  border-radius: 6px;
 }
 
 details.analysis {
@@ -610,9 +600,9 @@ details.analysis summary {
   cursor: pointer;
   width: fit-content;
   padding: 8px 14px;
-  border: 1px solid #334155;
+  border: 1px solid #d0d7de;
   border-radius: 8px;
-  background: #1f2937;
+  background: #eaeef2;
   font-size: 14px;
   list-style: none;
 }
@@ -648,13 +638,13 @@ button.mini {
 }
 
 button.mini.buy {
-  color: #6ee7b7;
-  border-color: #065f46;
+  color: #1a7f37;
+  border-color: #1a7f37;
 }
 
 button.mini.sell {
-  color: #fca5a5;
-  border-color: #7f1d1d;
+  color: #cf222e;
+  border-color: #ffebe9;
 }
 
 .ticket {
@@ -663,9 +653,9 @@ button.mini.sell {
   gap: 12px 16px;
   flex-wrap: wrap;
   padding: 14px;
-  border: 1px solid #6366f180;
-  border-radius: 12px;
-  background: #6366f10f;
+  border: 1px solid #0969da80;
+  border-radius: 8px;
+  background: #0969da0f;
 }
 
 .ticket strong {
@@ -678,7 +668,7 @@ button.mini.sell {
   flex-direction: column;
   gap: 4px;
   font-size: 12px;
-  color: #8b98ad;
+  color: #656d76;
 }
 
 .ticket input {
@@ -704,7 +694,7 @@ button.stock-title {
 }
 
 button.stock-title:hover .ticker {
-  color: #a5b4fc;
+  color: #0969da;
   text-decoration: underline;
 }
 
@@ -717,7 +707,7 @@ button.back {
   border: none;
   background: none;
   padding: 0;
-  color: #a5b4fc;
+  color: #0969da;
 }
 
 dl.stats {
@@ -733,11 +723,11 @@ dl.stats div {
   justify-content: space-between;
   gap: 12px;
   padding: 10px 0;
-  border-bottom: 1px solid #1c2536;
+  border-bottom: 1px solid #eaeef2;
 }
 
 dl.stats dt {
-  color: #8b98ad;
+  color: #656d76;
 }
 
 dl.stats dd {
